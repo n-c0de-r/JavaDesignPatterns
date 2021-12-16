@@ -6,7 +6,6 @@ public class Main {
 		
 		NotificationManager notificationManager = new NotificationManager();
 		
-		notificationManager.setupSystem();
 		notificationManager.registerObservers();
 		notificationManager.notifyObservers();
 		notificationManager.printCartLists();
