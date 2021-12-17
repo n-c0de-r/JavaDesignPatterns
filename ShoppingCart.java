@@ -46,4 +46,27 @@ public class ShoppingCart {
 	public String getBrand() {
 		return brand;
 	}
+	
+	/**
+	 * Setter method for the cart's ID.
+	 * @param	newID - Integer
+	 */
+	public void setID(int newID) {
+		id = newID;
+	}
+	/**
+	 * Setter method for the cart's finding location.
+	 * @param	newLocation - String
+	 */
+	public void setLocation (String newLocation) {
+		location = newLocation;
+	}
+	
+	/**
+	 * Setter method for the brand's name the cart belongs to.
+	 * @param	newBrand - String
+	 */
+	public void setBrand(String newBrand) {
+		brand = newBrand;
+	}
 }
