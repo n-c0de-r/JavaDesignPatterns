@@ -20,6 +20,22 @@ public class Store implements Observer {
 	}
 	
 	/**
+	 * Getter for the list of carts.
+	 * @return	cartsList - ArrayList
+	 */
+	public ArrayList<ShoppingCart> getCartsList() {
+		return cartsList;
+	}
+	
+	/**
+	 * Getter for the store name.
+	 * @return	storeName - String
+	 */
+	public String getName() {
+		return storeName;
+	}
+	
+	/**
 	 * Prints the list of all potential carts belonging to this store.
 	 */
 	public void printCartList() {
@@ -44,11 +60,10 @@ public class Store implements Observer {
 	 */
 	@Override
 	public void update(ShoppingCart cart) {
-		if (cart.getBrand().toLowerCase().equals(storeName.toLowerCase())
-				||cart.getBrand().toLowerCase().equals("unknown")) {
-			cartsList.add(cart);
-		} else {
+		if (!(cart.getBrand().toLowerCase().equals(storeName.toLowerCase())
+				||cart.getBrand().toLowerCase().equals("unknown"))) {
 			return;
 		}
+		cartsList.add(cart);
 	}
 }
