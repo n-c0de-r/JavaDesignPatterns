@@ -48,9 +48,17 @@ public class NotificationManager {
 		carts.add(new ShoppingCart(123, "Fuchsweg 3", "Lidl"));
 		carts.add(new ShoppingCart(456, "Katzenpfad 9", "Aldi"));
 		carts.add(new ShoppingCart(789, "Wuffallee 1", "Aldi"));
-		carts.add(new ShoppingCart(321, "Keksstraﬂe 5", "Edeka"));
+		carts.add(new ShoppingCart(321, "Keksstra√üe 5", "Edeka"));
 		carts.add(new ShoppingCart(654, "Kraterplatz 0", "Penny"));
 		carts.add(new ShoppingCart(934, "Mysteriumsgasse 9 3/4", "unknown"));
+	}
+	
+	/**
+	 * Getter for list of shopping carts.
+	 * @return	ShoppingCartList
+	 */
+	public ShoppingCartList getShoppingCartList() {
+		return list;
 	}
 	
 	/**
