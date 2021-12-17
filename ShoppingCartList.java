@@ -11,10 +11,18 @@ public class ShoppingCartList implements Subject{
 	private ArrayList<Observer> observers = new ArrayList<Observer>();
 
 	
-	ShoppingCartList(){
+	public ShoppingCartList(){
 		// nothing here but crickets...
 	}
-
+	
+	/**
+	 * Getter for the list of observers.
+	 * @return	observers - ArrayList
+	 */
+	public ArrayList<Observer> getObservers() {
+		return observers;
+	}
+	
 	@Override
 	public void registerObserver(Observer observer) {
 		observers.add(observer);
